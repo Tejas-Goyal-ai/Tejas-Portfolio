@@ -96,7 +96,7 @@ export const navItems: NavItem[] = [
 export const quickFacts: QuickFact[] = [
   { label: 'Total experience', value: '1 yr 1 mo' },
   { label: 'Current location', value: 'Chandigarh' },
-  { label: 'Expected CTC', value: '6 LPA' },
+  { label: 'Availability', value: 'Remote / On-site' },
 ]
 
 export const skillGroups: SkillGroup[] = [
@@ -217,8 +217,18 @@ export const education = [
 ]
 
 export const certifications = [
-  { name: 'Generative AI', issuer: 'IBM SkillsBuild', year: '2026' },
-  { name: 'AI Engineer Certificate', issuer: 'OneRoadmap', year: '2026' },
+  {
+    name: 'Generative AI',
+    issuer: 'IBM SkillsBuild',
+    year: '2026',
+    url: 'https://www.credly.com/badges/791d2498-dc44-47d1-a94a-0540ef2db790',
+  },
+  {
+    name: 'AI Engineer Certificate',
+    issuer: 'OneRoadmap',
+    year: '2026',
+    url: 'https://www.oneroadmap.io/skills/ai/certificate/CERT-8FD4C8D5',
+  },
 ]
 
 export const featuredProjects: FeaturedProject[] = [

@@ -153,11 +153,35 @@ export function About() {
                   </h3>
                   <div className="space-y-4">
                     {certifications.map((c) => (
-                      <div key={c.name}>
-                        <p className="text-sm font-medium text-ink">{c.name}</p>
-                        <p className="text-xs text-muted">{c.issuer}</p>
-                        <p className="mt-0.5 font-mono text-[11px] text-accent">{c.year}</p>
-                      </div>
+                      <a
+                        key={c.name}
+                        href={c.url}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="group -mx-2 flex items-start justify-between gap-2 rounded-lg px-2 py-1.5 transition-colors hover:bg-surface-2/60"
+                      >
+                        <span>
+                          <span className="block text-sm font-medium text-ink transition-colors group-hover:text-accent">
+                            {c.name}
+                          </span>
+                          <span className="block text-xs text-muted">{c.issuer}</span>
+                          <span className="mt-0.5 block font-mono text-[11px] text-accent">{c.year}</span>
+                        </span>
+                        <svg
+                          className="mt-0.5 h-3.5 w-3.5 shrink-0 text-muted transition-colors group-hover:text-accent"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                          aria-hidden
+                        >
+                          <path
+                            d="M6 3h7v7M13 3L5 11M10 9v4H3V6h4"
+                            stroke="currentColor"
+                            strokeWidth="1.4"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+                      </a>
                     ))}
                   </div>
                 </div>

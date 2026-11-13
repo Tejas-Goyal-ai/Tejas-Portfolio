@@ -182,9 +182,9 @@ export function Skills() {
       </div>
 
       <div className="container-x mt-8">
-        <div className="grid gap-4 lg:grid-cols-[minmax(0,300px)_1fr]">
-          <Reveal className="h-full">
-            <div className="flex h-full gap-2.5 overflow-x-auto pb-2 lg:flex-col lg:overflow-visible lg:pb-0">
+        <div className="grid min-w-0 gap-4 lg:grid-cols-[minmax(0,300px)_1fr]">
+          <Reveal className="h-full min-w-0">
+            <div className="flex h-full w-full min-w-0 gap-2.5 overflow-x-auto pb-2 lg:flex-col lg:overflow-visible lg:pb-0">
               {skillGroups.map((g, i) => {
                 const isActive = active === i
                 return (
@@ -235,7 +235,7 @@ export function Skills() {
             </div>
           </Reveal>
 
-          <Reveal delay={0.08} className="flex items-center justify-center">
+          <Reveal delay={0.08} className="flex min-w-0 items-center justify-center">
             <div className="gradient-border relative w-full overflow-hidden rounded-3xl border border-line/60 bg-surface/50 p-6 backdrop-blur-xl sm:p-8 lg:max-w-[68%]">
               <div className="pointer-events-none absolute -right-24 -top-24 h-64 w-64 rounded-full bg-accent/15 blur-3xl" />
               <div className="pointer-events-none absolute -bottom-28 -left-20 h-56 w-56 rounded-full bg-accent-2/10 blur-3xl" />

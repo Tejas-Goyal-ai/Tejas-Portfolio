@@ -40,7 +40,7 @@ function WelcomeCard() {
       transition={{ duration: 1, delay: 0.45, ease: [0.21, 0.47, 0.32, 0.98] }}
       className="relative w-full max-w-sm"
     >
-      <div className="absolute -inset-6 rounded-[2rem] bg-gradient-to-br from-accent/25 via-accent-2/15 to-transparent blur-2xl" />
+      <div className="absolute -inset-4 rounded-[2rem] bg-gradient-to-br from-accent/25 via-accent-2/15 to-transparent blur-2xl" />
       <div className="glass-strong relative overflow-hidden rounded-[2rem] p-7 text-center shadow-card">
         <div className="pointer-events-none absolute -right-16 -top-16 h-40 w-40 rounded-full bg-accent/20 blur-3xl" />
 
@@ -129,7 +129,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.2 }}
-              className="mt-5 flex h-9 items-center font-display text-xl font-medium text-ink sm:text-2xl"
+              className="mt-5 flex min-h-9 flex-wrap items-center font-display text-lg font-medium text-ink sm:text-2xl"
             >
               <span className="mr-2 text-muted">I am a</span>
               <span className="text-accent">{typed}</span>
@@ -194,17 +194,17 @@ export function Hero() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.6 }}
-              className="mt-12 grid max-w-xl grid-cols-3 gap-4"
+              className="mt-10 grid max-w-xl grid-cols-3 gap-2.5 sm:mt-12 sm:gap-4"
             >
               {quickFacts.map((fact) => (
                 <div
                   key={fact.label}
-                  className="rounded-2xl border border-line/60 bg-surface/40 px-4 py-3 backdrop-blur-xl"
+                  className="rounded-2xl border border-line/60 bg-surface/40 px-3 py-2.5 backdrop-blur-xl sm:px-4 sm:py-3"
                 >
-                  <p className="font-display text-lg font-bold text-ink sm:text-xl">
+                  <p className="font-display text-sm font-bold text-ink sm:text-xl">
                     {fact.value}
                   </p>
-                  <p className="mt-1 text-[11px] leading-snug text-muted">{fact.label}</p>
+                  <p className="mt-1 text-[10px] leading-snug text-muted sm:text-[11px]">{fact.label}</p>
                 </div>
               ))}
             </motion.div>

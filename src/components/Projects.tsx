@@ -9,7 +9,7 @@ export function Projects() {
   const [active, setActive] = useState<FeaturedProject | null>(null)
 
   return (
-    <section id="projects" className="relative py-24 sm:py-32">
+    <section id="projects" className="relative pt-10 pb-8 sm:py-16">
       <div className="container-x">
         <SectionHeading
           label="Featured Projects"

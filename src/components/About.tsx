@@ -13,7 +13,7 @@ const focus = [
 
 export function About() {
   return (
-    <section id="about" className="relative py-24 sm:py-32">
+    <section id="about" className="relative pt-10 pb-8 sm:py-16">
       <div className="container-x">
         <SectionHeading
           label="About"

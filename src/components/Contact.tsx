@@ -61,7 +61,7 @@ const channels = [
 
 export function Contact() {
   return (
-    <section id="contact" className="relative py-24 sm:py-32">
+    <section id="contact" className="relative pt-10 pb-8 sm:py-16">
       <div className="container-x">
         <Reveal>
           <div className="relative overflow-hidden rounded-[2rem] border border-line/60 bg-surface/40 p-8 backdrop-blur-xl sm:p-14">
